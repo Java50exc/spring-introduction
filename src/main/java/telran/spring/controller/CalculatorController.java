@@ -9,4 +9,19 @@ public class CalculatorController {
 	double add(double op1, double op2) {
 		return op1 + op2;
 	}
+	
+	@GetMapping("subtract")
+	double subtract(double op1, double op2) {
+		return op1 - op2;
+	}
+	
+	@GetMapping("multiply")
+	double multiply(double op1, double op2) {
+		return op1 * op2;
+	}
+	
+	@GetMapping("division")
+	double division(double op1, double op2) {
+		return op1 / op2;
+	}
 }
